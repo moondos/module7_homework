@@ -26,7 +26,7 @@ Kettle.prototype.boilWater = function () {
 
 Kettle.prototype.display = function () {
     this.energyConsumption = this.voltage * this.power;
-    return(`${this.nomination} - чайник ${this.brand}: потребление энергии - ${this.energyConsumption}W, цвет - ${this.color}, цена - ${this.price}тг.`)
+    console.log(`${this.nomination} - чайник ${this.brand}: потребление энергии - ${this.energyConsumption}W, цвет - ${this.color}, цена - ${this.price}тг.`)
 }
 
 function MicroWave(brand, color, price, voltage, power) {
@@ -45,7 +45,7 @@ MicroWave.prototype.readyFood = function () {
 
 MicroWave.prototype.display = function () {
     this.energyConsumption = this.voltage * this.power;
-    return(`${this.nomination} - микроволновка ${this.brand}: потребление энергии - ${this.energyConsumption}W, цвет - ${this.color}, цена - ${this.price}тг.`)
+    console.log(`${this.nomination} - микроволновка ${this.brand}: потребление энергии - ${this.energyConsumption}W, цвет - ${this.color}, цена - ${this.price}тг.`)
 }
 
 const kettleBosh = new Kettle("Bosh", "Green", 5000, 100, 2);
